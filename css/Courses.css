@@ -1,0 +1,32 @@
+.card-container{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.card{
+    background-color: white;
+}
+.first-c{
+}
+.first-c img{
+    width: 100%;
+
+}
+.info-c{
+    padding: 20px;
+    border-bottom: 1px solid grey;
+}
+.info-c p{
+    color: grey;
+    font-size: 14px;
+}
+.c-info{
+    display: flex;
+    justify-content: center;
+}
+.c-info span{
+    background: blue;
+    position: relative;
+    border-radius: 7px;
+    padding: 4px 6px;
+    bottom: 13.1px;
+    color: white;
+}

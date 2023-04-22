@@ -1,0 +1,158 @@
+.profile-card-cont{
+    
+    margin: 0px 54px 20px 20px;
+}
+.profile{
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+
+}
+.avatar{
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    border-right: 1px solid #eee;
+}
+.avatar h4{
+    margin: 0;
+    width: 158px;
+}
+.avatar p{
+    color: grey;
+}
+.avatar img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.progress{
+    background-color: grey;
+    width: 60%;
+    height: 4px;
+    border-radius: 5px;
+    margin: auto;
+}
+.progress span{
+    background-color: blue;
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+    height: inherit;
+}
+.info{
+    width: 100%;
+}
+.box{
+    flex-wrap: wrap;
+    width: 100%;
+
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 20px;
+    transition: .3s;
+}
+.box .heading{
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+}
+.name{
+    min-width: 250px;
+    padding: 10px 0 0
+}
+.name .gray{
+    color: gray;
+}
+.box:hover{
+    background-color: #eee;
+}
+.col{
+    display: flex;
+    gap: 20px;
+}
+.skills{
+    background: white;
+    padding: 20px;
+    margin: 20px 0 0 0;
+    border-radius: 6px;
+    flex-grow: 1;
+
+}
+.skills h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.skills p{
+    margin-top: 0;
+    font-size: 15px;
+    color: gray;
+}
+.skills .skills-list ul li{
+    list-style: none;
+    padding: 25px 0;
+
+}
+.skills .skills-list ul li span{
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.skills .skills-list ul li:not(:last-child)
+{
+    border-bottom: 1px solid #eee;
+}
+.activ{
+    flex-grow: 2;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.activ h4{
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.activ p{
+    margin-top: 0;
+    font-size: 15px;
+    color: gray;
+}
+.first{
+    display: flex;
+    align-items: center;
+}
+.first img{
+    width: 50px;
+    margin-right: 10px;
+
+}
+.first:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+@media (max-width: 767px){
+.profile{
+    flex-direction: column;
+}
+.avatar{
+    border-right: 0;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.skills{
+    flex-direction: column;
+    display: flex;
+}
+.skills ul{
+    display: contents;
+
+}
+.skills-list li{
+    display: flex;
+    gap: 20px;
+}
+}

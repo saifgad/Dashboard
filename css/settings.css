@@ -1,0 +1,156 @@
+ /*Setting Page*/
+ .site-control{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.site-info{
+    padding: 20px;
+    width: 70%;
+}
+.site-info p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.site-info span{
+    font-size: 14px;
+    color: gray ;
+
+}
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: blue;
+    padding-left: 45px;
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+    color: blue;
+}
+.site-text{
+    padding: 20px;
+}
+.site-text input{
+width: 550px;
+height: 200px;
+}
+.settings-info{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.first-name{
+    margin-bottom: 15px; 
+    display: flex;
+    flex-direction: column;  
+}
+.first-name span{
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+}
+.first-name input{
+    border-radius: 6px;
+    padding: 10px;
+}
+.last-name{
+    margin-bottom: 15px; 
+    display: flex;
+    flex-direction: column;  
+}
+.last-name span{
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+}
+.last-name input{
+    border-radius: 6px;
+    padding: 10px;
+}
+.email{
+    display: flex;
+    flex-direction: column;  
+}
+.email span{
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+}
+.email input{
+    border-radius: 6px;
+    padding: 10px;
+}
+.save{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+.save input{
+    background: #0075ff;
+    border-radius: 6px;
+}
+.security-info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.pass-info{
+    display: flex;
+    align-items: center ;
+    width: 100%;
+}
+.pass-info:not(:last-child){
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.pass{
+    width: 85%;
+}
+.pass p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.pass span{
+    color: grey;
+    font-size: 13px;
+}
+.change-button span{
+    background: #0075ff;
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+/*End Setting Page*/
+@media (max-width: 767px){
+
+.card-container{
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+}
+.site-text input{
+    width: 250px;
+}
+}

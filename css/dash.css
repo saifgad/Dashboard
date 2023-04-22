@@ -1,0 +1,56 @@
+@media (max-width: 767px){
+
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.card{
+    
+}
+.welcome-img img{
+    display: none;
+}
+ .head-gray {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+    .title{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .title .title-heading{
+        margin: 0;
+        
+    }
+ .buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .news-container{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 11%;
+
+    }
+    .news-container .news-1{
+        display: block;
+    }
+    .info-days{
+        width: 33%;
+    }
+    .news-1 .news-info{
+        width: 80%;
+        
+    }
+}
